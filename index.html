@@ -1,193 +1,292 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Curriculum</title>
-	<style>
-
-		.cabecera{
-			clear: both;
-			padding-top: 30px;
-			text-align: center;
-			box-sizing: border-box;
-			border-color: black;
-
+	<head>
+		<meta charset="utf-8">
+		<title>Curriculum</title>
+		<style>
+			body {
+				margin: 0;
+			}
+			.header {
+				margin-bottom: 10px;
+			}
+			.contenedor{
+				background-color: lightgrey;
+				padding: 0 150px;
+				width: auto;
+				
+			}
 			
-		}
-		.acerca{
-			padding-left: 100px;
-			width: 80%;
-			text-align: justify;
-		}
-		.educacion{
+			.cabecera{
+				text-align: center;
+				box-sizing: border-box;			
+				background-color: white;
+				height: 150px;
+				padding-top: 60px;
+				
+			}
+
+			.acerca{
+				padding-left: 100px;
+				width: 80%;
+				text-align: justify;
+			}
+			.educacion{				
+				padding-left: 100px;
+				width: 80%;	
+			}
+			.experiencia{				
+				padding-left: 100px;
+				width: 80%;
+			}
+			.contenedor-datos {
+				width: 100%;
+				display: inline-flex;
+				
+			}
+			.primera {
+	    		width: 60%;
+	    		background-color: white;
+	    		font-family: 'Open Sans', sans-serif;
+	    		box-sizing: border-box;
+	    		
+
+			}
+			.segunda {
+			    width: 40%;
+			    background-color: white;
+			    font-family: 'Open Sans', sans-serif;
+			    box-sizing: border-box;
+			    
+			}
+
+			.skills{
+				list-style-type: none;
+
+			}
+			h2{
+				color: red;
+
+			}
+			.hobbies{
+				list-style-type: none;
+			}
+			span{
+				color: red;
+			}
+			.imgRedonda {
+			    width:200px;
+			    height:200px;
+			    border-radius:100px;
+			    position: relative;
+		    	top: 5em;
+			}
+			.year{
+				float: left;
+				width: 20%;
+				height: 20%;
+			}
 			
-			padding-left: 100px;
-			width: 80%;	
-		}
-		.experiencia{
-			
-			padding-left: 100px;
-			width: 80%;
-		}
-		.primera {
-    		width: 60%;
-    		float: left;
-    		background-color: white;
-		}
-		.segunda {
-		    width: 40%;
-		    float: left;
-		    background-color: white;
-		}
-		body{
-			background-color: lightgrey;
-		}
-		.divisor{
-			background-color: white;
-		}
+		  	#myProgress {
+				width: 70%;
+				background-color: #F7F4F3;
+				border: 3px solid white;
+			}
 
-		.skills{
-			list-style-type: none;
-
-		}
-		h2{
-			color: red;
-
-		}
-		.hobbies{
-			list-style-type: none;
-		}
-		span{
-			color: red;
-		}
-		.imgRedonda {
-		    width:200px;
-		    height:200px;
-		    border-radius:100px;
-		}
-		.year{
-			float: left;
-			width: 20%;
-		}
-	</style>
-</head>
-<body>
-	<div>
-		<center><img src="feliz.jpg" class="imgRedonda"></center>
-	</div>
-	
-	 <div class="cabecera">
-	 	<h1>HOLA MI NOMBRE ES <span>JOSELIN</span> Y ESTE ES MI RESUMEN </h1>
-	
-	</div>
-	<div class="divisor">
-	<div class="primera">
-		<div class="acerca">
-			<strong><h2>//ACERCA DE</h2></strong>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
-		<div class="educacion">
-			<strong><h2>//EDUCACIÓN</h2></strong>
-			<div class="year">
-				<h4>2012</h4>
-			</div>
-				<div>
-					<p><strong> I was born in katawace</strong>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-			</div>
-			<div class="year">
-				<h4>1986</h4>
-			</div>
-			<div>
-				<strong> I was born in katawace</strong>
-			<br>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			<br>
-			</div>
-		</div>
-		<div class="experiencia">
-			<strong><h2>//EXPERIENCIA</h2></strong>
-			<div>
-			 	<div class="year2">
-					<h4>Google <br>2013-2014</h4>					
-				</div>
-				<div>
-					<p><strong> Front-end developer / PHP Programmer</strong>
-				<br>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-				</div>
-			</div>
+			#myBar1{
+				width: 100%;
+				height: 23px;
+				background-color: #EC3931;
+				color: white;
+			}
+			#myBar2{
+				width: 80%;
+				height: 23px;
+				background-color: #EC3931;
+				color: white;
+			}
+			#myBar3{
+				width: 60%;
+				height: 23px;
+				background-color: #EC3931;
+				color: white;
+			}
+			#myBar4{
+				width: 40%;
+				height: 23px;
+				background-color: #EC3931;
+				color: white;
+			}
+			#myBar5{
+				width: 20%;
+				height: 23px;
+				background-color: #EC3931;
+				color: white;
+			}
+			#myBar6,#myBar7, #myBar8 {
+				width: 30%;
+				height: 30px;
+				background-color: #9C43A6;
+				color: white;
+				float: left;
+				border: 2px solid white;		
+			}					 	 
+			.desc{
+				float: left;
+				width: 70%;
+				text-align: justify;
+			}	
+			.footer{
+				text-align: right;
+				background-color: white;
+				height: 40px;
+			}
 			
 
-			<div>
-				<div class="year2">
-					<h4>Google <br>2013-2014</h4>
-					
+		</style>
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="header">
+				<div class="imagen-header">
+					<center><img src="joselin.jpg" class="imgRedonda"></center>
 				</div>
-				<div>
-						<p><strong> Front-end developer / PHP Programmer</strong>
-					<br>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><br><br>
+				 <div class="cabecera">
+				 	<h1>HOLA MI NOMBRE ES <span>JOSELIN</span> Y ESTE ES MI RESUMEN </h1>
 				</div>
 			</div>
-		</div>
-
-	</div>
-	<div class="segunda">
-		<div class="contacto">
-			<strong><h2>//CONTACTO</h2></strong>
-			<ul>
-				<li>Email: miguel@@ewok.cl</li>
-				<li>Skype: miguelcantillana</li>
-				<li>Twitter:@miguellinux</li>
-				<li>Facebook:/miguelcantillana</li>
-			</ul>
-		</div>
-		
-		<div class="skills">
-			<strong><h2>//SKILLS</h2></strong>
-			<ul>
-				<li>PYTHON</li>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JS</li>
-				<li>PHP</li>
-			</ul>
-		</div>
-		
-		<div class="idioma">
-			<strong><h2>//IDIOMA</h2></strong>
-			Inglés 
-			<img src="star-l-on.png">
-			<img src="star-l-on.png">
-			<img src="star-l-on.png">
-			<img src="star-l-off.png">
-			<img src="star-l-off.png">
-			<br>
-			Español
-			<img src="star-l-on.png">
-			<img src="star-l-on.png">
-			<img src="star-l-on.png">
-			<img src="star-l-on.png">
-			<img src="star-l-off.png">
-			<br>
-
-		</div>
-		<div class="hobbies">
-			<strong><h2>//HOBBIES</h2></strong>
-			<ul>
-				<li>Fotografia</li>
-				<li>Deporte</li>
-				<li>Música</li>
-			</ul>
-
-		</div>
-	</div>
-</div>
-<div>
-	
-</div>
-</body>
+			<div class="contenedor-datos">
+				<section class="primera">
+					<div class="acerca">
+						<strong><h2>//ACERCA DE</h2></strong>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. </p>
+					</div>
+					<div class="educacion">
+						<strong><h2>//EDUCACIÓN</h2></strong>
+						<div class="year">
+							<h4>2012</h4>
+						</div>
+						<div>
+							<p><strong> I was born in katawace</strong>
+							<br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. 
+							</p>
+						</div>
+						<div class="year">
+							<h4>1986</h4>
+						</div>
+						<div>
+							<p><strong> I was born in katawace</strong>
+							<br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. 
+							</p>
+						</div>
+					</div>
+					<div class="experiencia">
+			    		<strong><h2>//EXPERIENCIA</h2></strong>
+						<div>
+						 	<div class="year">
+								Google	
+								<br>
+								2013-2014
+								<br>				
+							</div>
+							<div class="desc">
+								<p><strong> Front-end developer / PHP Programmer</strong>
+								<br>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. 
+								</p>
+							</div>
+						</div>
+						<div>
+						 	<div class="year">
+								Google	
+								<br>
+								2013-2014
+								<br>				
+							</div>
+							<div class="desc">
+								<p><strong> Front-end developer / PHP Programmer</strong>
+							<br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.  </p>
+							</div>
+						</div>
+					</div>
+			    </section>
+				<aside class="segunda">
+					<div class="contacto">
+							<strong><h2>//CONTACTO</h2></strong>
+							<ul>
+								<li>Email: miguel@ewok.cl</li>
+								<li>Skype: miguelcantillana</li>
+								<li>Twitter:@miguellinux</li>
+								<li>Facebook:/miguelcantillana</li>
+							</ul>
+					</div>
+					<div class="skills">
+							<strong><h2>//SKILLS</h2></strong>
+						<div>
+								<div id="myProgress">
+								 	 <div id="myBar1">PYTHON
+								 	 </div>
+								</div>
+								<div id="myProgress">
+								 	 <div id="myBar2">HTML
+								 	 </div>
+								</div>
+								<div id="myProgress">
+								 	<div id="myBar3">CSS
+								 	</div>
+								</div>
+								<div id="myProgress">
+								  	<div id="myBar4">JS
+								 	 </div>
+								</div>
+								<div id="myProgress">
+								  	<div id="myBar5">PHP
+								 	 </div>
+								</div>
+						</div>						
+					</div>
+					<div class="idioma">
+							<strong><h2>//IDIOMA</h2></strong>
+							<p>Inglés</p> 
+							<img src="star-l-on.png">
+							<img src="star-l-on.png">
+							<img src="star-l-on.png">
+							<img src="star-l-off.png">
+							<img src="star-l-off.png">
+							<br>
+							<p>Español</p>
+							<img src="star-l-on.png">
+							<img src="star-l-on.png">
+							<img src="star-l-on.png">
+							<img src="star-l-on.png">
+							<img src="star-l-off.png">
+							<br>
+					</div>
+					<div class="hobbies">
+						<strong><h2>//HOBBIES</h2></strong>
+						<div>
+							 <div id="myBar6">Fotografia
+							 </div>
+						</div>
+						<div>
+							<div id="myBar7">Deporte
+							</div>
+						</div>
+						<div>
+							<div id="myBar8">Música
+							</div>
+						</div>
+					</div> 				
+				</aside>
+			</div>
+			<div class="footer">
+				<p>Curso full stack G9 2017</p>
+			</div>
+		</div>	
+			
+	</body>
 </html>
+		
